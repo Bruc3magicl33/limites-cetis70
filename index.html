@@ -610,6 +610,10 @@ function withCoef(k, factorText){
 
       let a = randint(-5, 5);
 
+while(a === 0){
+  a = randint(-5, 5);
+}
+
 // Si solo se trabaja diferencia de cuadrados,
 // evitamos x→0 porque x² - 0 no genera una diferencia de cuadrados útil.
 if (types.length === 1 && types[0] === "diferenciaCuadrados"){
